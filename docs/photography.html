@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Photography · Joshua Mu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* === Base styles (Minima-like) === */
+body {
+  margin: 0;
+  font: 400 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+}
+
+a { color: #2a7ae2; text-decoration: none; }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.site-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 56px;
+  margin: 0;
+}
+
+.site-nav {
+  float: right;
+  line-height: 56px;
+  font-size: 15px;
+}
+
+.site-nav a[href="photography.html"] {
+  font-size: 20px;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  color: #424242;
+}
+
+/* === Justified gallery === */
+.gallery {
+  margin-top: 40px;
+}
+
+.gallery-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.gallery-row img {
+  height: 220px;
+  margin-right: 10px;
+  cursor: zoom-in;
+  border-radius: 4px;
+}
+
+.gallery-row img:last-child {
+  margin-right: 0;
+}
+
+/* instant, subtle hover */
+.gallery-row img:hover {
+  transform: scale(1.02);
+}
+
+/* === Lightbox === */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: linear-gradient(
+    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.35)
+  );
+  backdrop-filter: blur(18px) saturate(130%);
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+}
+
+.lightbox-content {
+  background: rgba(253,253,253,0.95);
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 65vh;
+  cursor: auto;
+  user-select: none;
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #fff;
+  background: rgba(0,0,0,0.55);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* === Navigation buttons === */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  color: rgba(0,0,0,0.7);
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+#prev { left: 40px; }
+#next { right: 40px; }
+
+/* === Thumbnails === */
+.thumb-strip {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.thumb-strip img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  opacity: 0.6;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+.thumb-strip img.active {
+  opacity: 1;
+  border-color: #2a7ae2;
+}
+
+/* === Footer === */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #828282;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrapper">
+    <h1 class="site-title"><a href="index.html">Joshua Mu</a></h1>
+    <nav class="site-nav">
+      <a href="projects.html">Projects</a>
+      <a href="photography.html" aria-label="Photography" title="Photography">📷 🎇</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrapper">
+  <h1>Some cool pictures I've taken</h1>
+
+  <!-- Unified gallery -->
+  <div class="gallery" id="gallery">
+    <img src="pics/DSC2582.JPG" data-caption="Rose Parade · Pasadena, CA · Canon EOS R · 1/125s f/5.6">
+    <img src="pics/DSC2668.JPG" data-caption="Rose Parade · Pasadena, CA · Canon EOS R · 1/160s f/4">
+    <img src="pics/DSC2723.JPG" data-caption="Malibu Coast · Nikon D850 · 1/200s f/8">
+    <img src="pics/DSC2738.JPG" data-caption="Malibu Sunset · Nikon D850 · 1/60s f/11">
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrapper">© 2026 Joshua Mu</div>
+</footer>
+
+<!-- === Lightbox === -->
+<div class="lightbox" id="lightbox">
+  <button class="nav-button" id="prev">&#8592;</button>
+  <div class="lightbox-content">
+    <img id="lightbox-img">
+    <div class="caption" id="lightbox-caption"></div>
+    <div class="thumb-strip" id="thumb-strip"></div>
+  </div>
+  <button class="nav-button" id="next">&#8594;</button>
+</div>
+
+<script>
+/* === Justified layout === */
+const gallery = document.getElementById("gallery");
+const images = Array.from(gallery.querySelectorAll("img"));
+
+function justify() {
+  const rowHeight = 220;
+  const containerWidth = gallery.clientWidth;
+  let row = [];
+  let rowWidth = 0;
+
+  gallery.innerHTML = "";
+
+  images.forEach((img, index) => {
+    const aspect = img.naturalWidth / img.naturalHeight;
+    const width = rowHeight * aspect;
+
+    row.push({ img, width });
+    rowWidth += width;
+
+    if (rowWidth >= containerWidth) {
+      const scale = containerWidth / rowWidth;
+      const rowDiv = document.createElement("div");
+      rowDiv.className = "gallery-row";
+
+      row.forEach(item => {
+        item.img.style.height = rowHeight * scale + "px";
+        rowDiv.appendChild(item.img);
+      });
+
+      gallery.appendChild(rowDiv);
+      row = [];
+      rowWidth = 0;
+    }
+  });
+
+  /* ✅ Render the final (incomplete) row */
+  if (row.length > 0) {
+    const rowDiv = document.createElement("div");
+    rowDiv.className = "gallery-row";
+
+    row.forEach(item => {
+      item.img.style.height = rowHeight + "px"; // keep natural height
+      rowDiv.appendChild(item.img);
+    });
+
+    gallery.appendChild(rowDiv);
+  }
+}
+
+
+window.addEventListener("load", justify);
+window.addEventListener("resize", justify);
+
+/* === Lightbox === */
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const captionEl = document.getElementById("lightbox-caption");
+const thumbStrip = document.getElementById("thumb-strip");
+let currentIndex = 0;
+
+images.forEach((img, i) => {
+  img.addEventListener("click", () => {
+    currentIndex = i;
+    open();
+  });
+
+  const t = document.createElement("img");
+  t.src = img.src;
+  t.onclick = () => { currentIndex = i; show(); };
+  thumbStrip.appendChild(t);
+});
+
+function open() {
+  lightbox.style.display = "flex";
+  show();
+}
+
+function show() {
+  const img = images[currentIndex];
+  lightboxImg.src = img.src;
+  captionEl.innerHTML = `<i>${img.dataset.caption}</i>`;
+  [...thumbStrip.children].forEach(t => t.classList.remove("active"));
+  thumbStrip.children[currentIndex].classList.add("active");
+}
+
+document.getElementById("prev").onclick = () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  show();
+};
+document.getElementById("next").onclick = () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  show();
+};
+
+lightbox.onclick = e => {
+  if (e.target === lightbox) lightbox.style.display = "none";
+};
+
+document.addEventListener("keydown", e => {
+  if (lightbox.style.display !== "flex") return;
+  if (e.key === "ArrowLeft") document.getElementById("prev").click();
+  if (e.key === "ArrowRight") document.getElementById("next").click();
+  if (e.key === "Escape") lightbox.style.display = "none";
+});
+</script>
+
+</body>
+</html>
