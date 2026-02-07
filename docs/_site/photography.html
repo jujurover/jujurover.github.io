@@ -8,47 +8,112 @@
 <style>
 /* === Base (Minima-like) === */
 body {
-  margin: 0;
-  font: 400 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
-  color: #111;
-  background-color: #fdfdfd;
-}
+    margin: 0;
+    font: 400 17px/1.7 -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #111;
+    background-color: #fdfdfd;
+  }
 
-a { color: #2a7ae2; text-decoration: none; }
+  a {
+    color: #2a7ae2;
+    text-decoration: none;
+  }
 
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-}
+  .wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-.site-title {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 56px;
-  margin: 0;
+  /* Header */
+  .site-header {
+    border-top: 4px solid #424242;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
 }
 
 .site-nav {
-  float: right;
-  line-height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 24px;   /* consistent spacing */
   font-size: 15px;
 }
-
 .site-nav a {
-  margin-left: 20px;
-  color: #424242;
+  display: inline-block;
+  min-width: 40px; /* adjust as needed */
+  text-align: right;
 }
 
-.site-nav a[href="photography.html"] {
-  font-size: 20px;
-}
+
+  .site-title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+
+  .site-title a {
+    color: #111;
+  }
+
+  .site-nav a {
+    margin-left: 24px;
+    font-size: 15px;
+    color: #424242;
+  }
+
+  .site-nav a[href="photography.html"] {
+    font-size: 18px;
+  }
+
+  /* Content */
+  .page-content {
+    padding: 64px 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 56px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    max-width: 640px;
+    margin-bottom: 18px;
+  }
+
+  .section-note {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .item-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+  } 
 
 /* === Justified gallery === */
 .gallery {
@@ -173,10 +238,10 @@ a { color: #2a7ae2; text-decoration: none; }
 
 <header class="site-header">
   <div class="wrapper">
-    <h1 class="site-title"><a href="index.html">Joshua Mu</a></h1>
+    <h1 class="site-title"><a href="index.html"> main </a></h1>
     <nav class="site-nav">
-      <a href="projects.html">Projects</a>
-      <a href="photography.html" title="Photography">📷</a>
+      <a href="projects.html"> projects </a>
+      <a href="photography.html" aria-label="photography" title="photography">[📷 🎇]</a>
     </nav>
   </div>
 </header>
@@ -217,24 +282,30 @@ fetch("pics/meta/photos.json")
   .then(data => {
     photos = data;
     buildGallery();
-    justify();
   });
 
 /* === Build gallery and thumbnails === */
 function buildGallery() {
   gallery.innerHTML = "";
   thumbStrip.innerHTML = "";
+
   photos.forEach((p, i) => {
+    // === GRID IMAGE (SMALL THUMB) ===
     const img = document.createElement("img");
-    img.src = `pics/gallery/${p.filename}`;
+    img.src = `pics/gallery/${p.filename}`; 
     img.loading = "lazy";
     img.decoding = "async";
     img.dataset.index = i;
     img.onclick = () => open(i);
+
+    // Wait for image to load before justifying
+    img.onload = () => justify();
+
     gallery.appendChild(img);
 
+    // === LIGHTBOX THUMB STRIP ===
     const t = document.createElement("img");
-    t.src = img.src;
+    t.src = `pics/gallery/${p.filename}`;
     t.onclick = () => show(i);
     thumbStrip.appendChild(t);
   });
@@ -259,10 +330,12 @@ function justify() {
       const scale = containerWidth / rowWidth;
       const rowDiv = document.createElement("div");
       rowDiv.className = "gallery-row";
+
       row.forEach(item => {
         item.img.style.height = rowHeight * scale + "px";
         rowDiv.appendChild(item.img);
       });
+
       gallery.appendChild(rowDiv);
       row = [];
       rowWidth = 0;
@@ -293,15 +366,20 @@ function open(i) {
 function show(i) {
   currentIndex = i;
   const p = photos[i];
+
+  // 🔥 Only load full image when needed
   lightboxImg.src = `pics/full/${p.filename}`;
+
   captionEl.innerHTML = `
     <i>${p.description || ""}</i><br>
     ${p.camera} · ${p.exposure.focal_length}
     · f/${p.exposure.aperture}
     · ${p.exposure.shutter}s · ISO ${p.exposure.iso}
   `;
+
   [...thumbStrip.children].forEach(t => t.classList.remove("active"));
   thumbStrip.children[i].classList.add("active");
+
   centerThumbnail(i);
 }
 
@@ -332,6 +410,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape") lightbox.style.display = "none";
 });
 </script>
+
 
 </body>
 </html>
