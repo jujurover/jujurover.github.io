@@ -1,0 +1,937 @@
+[
+{
+  "filename": "20260206_0002.JPG",
+  "date": "2025:12:18 13:01:01",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 22.0,
+    "focal_length": "35.0 mm",
+    "iso": 1000
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0005.JPG",
+  "date": "2025:12:18 13:08:12",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/4000",
+    "aperture": 2.5,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0006.JPG",
+  "date": "2025:12:18 14:07:23",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 6.3,
+    "focal_length": "208.0 mm",
+    "iso": 200
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0009.JPG",
+  "date": "2025:12:18 14:19:37",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 6.3,
+    "focal_length": "193.0 mm",
+    "iso": 160
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0010.JPG",
+  "date": "2025:12:18 14:20:06",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 7.1,
+    "focal_length": "196.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0013.JPG",
+  "date": "2025:12:18 14:43:51",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 7.1,
+    "focal_length": "55.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0014.JPG",
+  "date": "2025:12:18 14:46:57",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 6.3,
+    "focal_length": "55.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0015.JPG",
+  "date": "2025:12:18 14:49:57",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/125",
+    "aperture": 5.6,
+    "focal_length": "91.0 mm",
+    "iso": 250
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0019.JPG",
+  "date": "2025:12:18 15:06:41",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 9.0,
+    "focal_length": "66.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0021.JPG",
+  "date": "2025:12:18 15:14:58",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 6.3,
+    "focal_length": "174.0 mm",
+    "iso": 500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0023.JPG",
+  "date": "2025:12:18 15:23:10",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 8.0,
+    "focal_length": "55.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0029.JPG",
+  "date": "2025:12:18 16:19:58",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/125",
+    "aperture": 4.5,
+    "focal_length": "66.0 mm",
+    "iso": 125
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0031.JPG",
+  "date": "2025:12:18 16:27:51",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 250
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0032.JPG",
+  "date": "2025:12:18 22:40:42",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 3.5,
+    "focal_length": "35.0 mm",
+    "iso": 500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0034.JPG",
+  "date": "2025:12:19 13:58:07",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 9.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0036.JPG",
+  "date": "2025:12:19 14:07:45",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 8.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0038.JPG",
+  "date": "2025:12:19 17:24:45",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 8.0,
+    "focal_length": "35.0 mm",
+    "iso": 125
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0041.JPG",
+  "date": "2025:12:19 21:12:51",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/25",
+    "aperture": 2.0,
+    "focal_length": "35.0 mm",
+    "iso": 1000
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0043.JPG",
+  "date": "2025:12:20 18:05:51",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 2.5,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0045.JPG",
+  "date": "2025:12:22 13:45:18",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 4.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0046.JPG",
+  "date": "2025:12:22 13:49:01",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 11.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0049.JPG",
+  "date": "2025:12:27 19:12:36",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/4000",
+    "aperture": 7.1,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0051.JPG",
+  "date": "2025:12:27 19:16:09",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/4000",
+    "aperture": 4.0,
+    "focal_length": "35.0 mm",
+    "iso": 500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0054.JPG",
+  "date": "2025:12:27 19:47:18",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/4000",
+    "aperture": 6.3,
+    "focal_length": "184.0 mm",
+    "iso": 5000
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0060.JPG",
+  "date": "2025:12:27 19:48:49",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/640",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 1600
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0061.JPG",
+  "date": "2025:12:27 20:06:21",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/125",
+    "aperture": 18.0,
+    "focal_length": "55.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0062.JPG",
+  "date": "2025:12:27 20:13:12",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/125",
+    "aperture": 13.0,
+    "focal_length": "210.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0063.JPG",
+  "date": "2025:12:28 14:24:16",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/800",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 125
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0064.JPG",
+  "date": "2025:12:28 15:35:20",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/800",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 125
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0067.JPG",
+  "date": "2025:12:28 15:37:50",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/800",
+    "aperture": 8.0,
+    "focal_length": "210.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0068.JPG",
+  "date": "2025:12:28 15:38:26",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/800",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 200
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0069.JPG",
+  "date": "2025:12:28 15:41:46",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/800",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 320
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0071.JPG",
+  "date": "2025:12:28 15:49:01",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/640",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0074.JPG",
+  "date": "2025:12:30 20:45:53",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 4.0,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0075.JPG",
+  "date": "2025:12:30 21:36:51",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/20",
+    "aperture": 4.0,
+    "focal_length": "35.0 mm",
+    "iso": 160
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0076.JPG",
+  "date": "2025:12:30 22:43:06",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 1.8,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0077.JPG",
+  "date": "2025:12:30 22:44:46",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 1.8,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0080.JPG",
+  "date": "2026:01:01 12:28:33",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 250
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0082.JPG",
+  "date": "2026:01:01 12:30:48",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0083.JPG",
+  "date": "2026:01:01 12:32:49",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 5.6,
+    "focal_length": "103.0 mm",
+    "iso": 160
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0085.JPG",
+  "date": "2026:01:01 12:33:23",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 640
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0086.JPG",
+  "date": "2026:01:01 12:46:04",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 800
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0088.JPG",
+  "date": "2026:01:01 12:50:50",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/320",
+    "aperture": 6.3,
+    "focal_length": "186.0 mm",
+    "iso": 400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0091.JPG",
+  "date": "2026:01:01 13:12:19",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 6.3,
+    "focal_length": "210.0 mm",
+    "iso": 640
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0094.JPG",
+  "date": "2026:01:01 13:26:16",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/200",
+    "aperture": 5.6,
+    "focal_length": "129.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0095.JPG",
+  "date": "2026:01:01 14:06:49",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 8.0,
+    "focal_length": "83.0 mm",
+    "iso": 200
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0096.JPG",
+  "date": "2026:01:01 14:12:28",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 14.0,
+    "focal_length": "60.0 mm",
+    "iso": 400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0097.JPG",
+  "date": "2026:01:02 02:38:25",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/6",
+    "aperture": 11.0,
+    "focal_length": "210.0 mm",
+    "iso": 250
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0104.JPG",
+  "date": "2026:01:03 02:15:23",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 4.5,
+    "focal_length": "33.0 mm",
+    "iso": 2500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0105.JPG",
+  "date": "2026:01:10 16:14:00",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/1000",
+    "aperture": 6.3,
+    "focal_length": "209.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0106.JPG",
+  "date": "2026:01:10 16:47:16",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/500",
+    "aperture": 4.5,
+    "focal_length": "56.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0107.JPG",
+  "date": "2026:01:10 17:20:04",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 20.0,
+    "focal_length": "82.0 mm",
+    "iso": 320
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0110.JPG",
+  "date": "2026:01:11 14:18:38",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 22.0,
+    "focal_length": "35.0 mm",
+    "iso": 200
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0111.JPG",
+  "date": "2026:01:11 14:24:25",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 14.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0113.JPG",
+  "date": "2026:01:11 14:25:30",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 14.0,
+    "focal_length": "35.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0115.JPG",
+  "date": "2026:01:17 15:23:04",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/100",
+    "aperture": 14.0,
+    "focal_length": "55.0 mm",
+    "iso": 320
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0117.JPG",
+  "date": "2026:01:17 20:43:48",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/5",
+    "aperture": 22.0,
+    "focal_length": "55.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0118.JPG",
+  "date": "2026:01:17 20:46:54",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 22.0,
+    "focal_length": "32.0 mm",
+    "iso": 2500
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0119.JPG",
+  "date": "2026:01:17 20:47:30",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 22.0,
+    "focal_length": "18.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0120.JPG",
+  "date": "2026:01:18 20:16:59",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/8",
+    "aperture": 22.0,
+    "focal_length": "18.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0123.JPG",
+  "date": "2026:01:18 20:22:31",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/60",
+    "aperture": 8.0,
+    "focal_length": "18.0 mm",
+    "iso": 5000
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0124.JPG",
+  "date": "2026:01:18 20:24:00",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/8",
+    "aperture": 22.0,
+    "focal_length": "18.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0125.JPG",
+  "date": "2026:01:18 20:24:37",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/80",
+    "aperture": 22.0,
+    "focal_length": "44.0 mm",
+    "iso": 2000
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0134.JPG",
+  "date": "2026:01:26 04:52:43",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 5.6,
+    "focal_length": "55.0 mm",
+    "iso": 1600
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0135.JPG",
+  "date": "2026:01:26 06:10:46",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/160",
+    "aperture": 5.6,
+    "focal_length": "55.0 mm",
+    "iso": 160
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0136.JPG",
+  "date": "2026:01:26 18:07:36",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/500",
+    "aperture": 5.6,
+    "focal_length": "55.0 mm",
+    "iso": 100
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0137.JPG",
+  "date": "2026:01:26 18:22:17",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/500",
+    "aperture": 8.0,
+    "focal_length": "55.0 mm",
+    "iso": 125
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0138.JPG",
+  "date": "2026:01:31 20:36:39",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/30",
+    "aperture": 11.0,
+    "focal_length": "210.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0139.JPG",
+  "date": "2026:01:31 22:10:02",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/400",
+    "aperture": 9.0,
+    "focal_length": "210.0 mm",
+    "iso": 250
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0144.JPG",
+  "date": "2026:02:03 22:48:46",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/10",
+    "aperture": 3.2,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0145.JPG",
+  "date": "2026:02:03 22:51:03",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": "1/25",
+    "aperture": 5.6,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+,
+{
+  "filename": "20260206_0148.JPG",
+  "date": "2026:02:04 01:27:09",
+  "camera": "SONY ILCE-6000",
+  "exposure": {
+    "shutter": 0.3,
+    "aperture": 18.0,
+    "focal_length": "35.0 mm",
+    "iso": 6400
+  },
+  "description": ""
+}
+]

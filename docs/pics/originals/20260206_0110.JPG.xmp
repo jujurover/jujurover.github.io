@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="XMP Core 4.4.0-Exiv2">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:exif="http://ns.adobe.com/exif/1.0/"
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:darktable="http://darktable.sf.net/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:lr="http://ns.adobe.com/lightroom/1.0/"
+   exif:DateTimeOriginal="2026:01:11 14:18:38.000"
+   xmp:Rating="1"
+   xmpMM:DerivedFrom="20260206_0110.JPG"
+   xmpMM:PreservedFileName="_DSC2919.JPG"
+   darktable:import_timestamp="63905970651579152"
+   darktable:change_timestamp="63906010548055694"
+   darktable:export_timestamp="-1"
+   darktable:print_timestamp="-1"
+   darktable:image_id="_DSC2919.JPG-2026:02:06 02:30:00"
+   darktable:xmp_version="5"
+   darktable:raw_params="0"
+   darktable:auto_presets_applied="1"
+   darktable:history_end="5"
+   darktable:iop_order_version="5"
+   darktable:history_basic_hash="0f9b5fb92690a1db2a86cc1fe367bf5d"
+   darktable:history_current_hash="bd63f86e733afab054fef9441eee35e4">
+   <darktable:masks_history>
+    <rdf:Seq>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415506"
+      darktable:mask_type="192"
+      darktable:mask_name="brush #1"
+      darktable:mask_version="6"
+      darktable:mask_points="gz02eJxtzl1IU2Ecx/EThEsrar0Ma7kSa8vhFEQ2cT3/n+KWHpmezBnZLBAhykWYWYi9B9KipReWHEFQlGK2OENRaNhFL1hSU89AvKgomRGlSFcT1hCjrp+L793n4tvkNcAq76UeWY9Lkf0EykSycTdNR1zsX4JwG2/jh7FBEISfi0Z0JNPo092DGHq8lVYd2TjXsIlrJ0Zy/tt7t8y4bEyh34u5kNVtXGvQFiCeMNFOTT4USzqZ9VbY39m4dn2lEDmT56nbYoO8r5S8ShEWrD6uDXQTwqvv6exxBldXmJbnANOZea71XymGSfpISgng+DVN3uESpI1Pce33D05oTr2gsaMOFD18TbukMswbQ1wb7BSR1D+iwEI5vjQOU+hIBayBG1yb/CoiNRhjW5wiZq9rabmtAq31g4xnRXMlLsgzrPSQCwMvI0zKq0Jhq8q1GWsSotEV5n9ThW9PpljIVo3YzVTug3Lfjc3qCSqbqUHQYCedsxbeOy1c29HgRo+vk+y6Wjxj10h9XoOTLf1ce7HyGPwxlYoPSLg6OkF97dUY2vGDa3ubPeiaS8FGXx2C8QTl1p2GqGwHzy698qD/QRaMTz1wJPYg9NmDPxkWrv0LUNIf2A=="
+      darktable:mask_nb="17"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415513"
+      darktable:mask_type="12"
+      darktable:mask_name="group `retouch'"
+      darktable:mask_version="6"
+      darktable:mask_points="gz05eJyblNqWOROImRlAoMH+EJTPDeWfQeNfQuPfQOPfQ+M/QeO/RuN/RON/R+P/Q+OzpKHyudD4gmh8cTS+MhrfCI1vh8Z3Q+OHoPGj0PgJaPxMNH4BGr8cjV+Hxu9C409C4wMAH/B/og=="
+      darktable:mask_nb="28"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415554"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #1"
+      darktable:mask_version="6"
+      darktable:mask_points="626e6e3fe2cf2f3f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415564"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #2"
+      darktable:mask_version="6"
+      darktable:mask_points="4455653f0e8a403f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415570"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #3"
+      darktable:mask_version="6"
+      darktable:mask_points="bccd653f99122b3f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415576"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #4"
+      darktable:mask_version="6"
+      darktable:mask_points="626e6e3f83882f3f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415582"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #5"
+      darktable:mask_version="6"
+      darktable:mask_points="121e6e3f9599323f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415588"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #6"
+      darktable:mask_version="6"
+      darktable:mask_points="8696663f72a41f3f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415595"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #7"
+      darktable:mask_version="6"
+      darktable:mask_points="899b633f0fb7333f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415601"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #8"
+      darktable:mask_version="6"
+      darktable:mask_points="e4044d3f24c8083f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415607"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #9"
+      darktable:mask_version="6"
+      darktable:mask_points="265a323f53dce83e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415614"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #10"
+      darktable:mask_version="6"
+      darktable:mask_points="76aa323fd918ce3e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415620"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #11"
+      darktable:mask_version="6"
+      darktable:mask_points="0f462e3fc034033f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415626"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #12"
+      darktable:mask_version="6"
+      darktable:mask_points="85b9313ff2670c3f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415633"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #13"
+      darktable:mask_version="6"
+      darktable:mask_points="f5ff6f3f1098dc3e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415639"
+      darktable:mask_type="192"
+      darktable:mask_name="brush #2"
+      darktable:mask_version="6"
+      darktable:mask_points="gz02eJwTlsuzP39rpd3rr7n2WgbddtZuefZlrSfszp7xsQVhBoYG+8NfNewZGRgYeqbl2Se+ZbKf8yfX3kz0s12NQb69RgCPPTa1G3cW2vPZ8dq7/My3V13FaS9XVWz/46IAVrVikpX211Mk7P/9L7c/fFrQ3sCoyv7NXzmsan0CKuw7r5jYHzhcbs+QZWR/406FvbC9OVa1ySk19nxP1Oz/rai237FG1/60fK19mrQCVrVbttTYT1HgsX83s8Y+g0fUvvp8jf0BE2asagEfTHVe"
+      darktable:mask_nb="7"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415651"
+      darktable:mask_type="192"
+      darktable:mask_name="brush #3"
+      darktable:mask_version="6"
+      darktable:mask_points="gz02eJzTN6qyT94UY68PpNuPhoNp+/mJ9mfP+NiCMANDg/3hrxr2jAwMDCC5HxXZ9itWVdlXT8+w37az0r4sKg+r2qj4cnvf37n2HT0V9rvW5tnrGJXZP/LIxapWWrnYPtcr3X5NbIl997Es++4Xhfb+55Kxqv36P99+qlCkvfHkAvvTvyLst+fk28drRWJVu3R9vr32zXT7baL59sddk+yneRbYT8jB7oYps4vt37ZV2b+fV2o/B+g/qxmF9nbJVVjVds5OtudnTreXv51q/4Uv3f5zdKK99vc0rGp55dLs++2r7APi0+0jSivtT99JsT/GWY1V7R/hGPvwA9n2d9xj7RVEsuxlHkTZ9+Fw78VncfZ5Kk3297/G2kdL19gfvh5vr2/dhlUtABOFu88="
+      darktable:mask_nb="11"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415666"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #14"
+      darktable:mask_version="6"
+      darktable:mask_points="3af8093f5833473e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415678"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #15"
+      darktable:mask_version="6"
+      darktable:mask_points="f7b6083f9a1d6d3e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415686"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #16"
+      darktable:mask_version="6"
+      darktable:mask_points="ab5c1e3fedc1203f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415700"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #17"
+      darktable:mask_version="6"
+      darktable:mask_points="11fb133fe9e8763f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415706"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #18"
+      darktable:mask_version="6"
+      darktable:mask_points="c6ac193f1e0e673f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415712"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #19"
+      darktable:mask_version="6"
+      darktable:mask_points="12502f3fb07a363f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415721"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #20"
+      darktable:mask_version="6"
+      darktable:mask_points="3f723f3f1c1b333f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415728"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #21"
+      darktable:mask_version="6"
+      darktable:mask_points="5ef3443f52ea063f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415735"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #22"
+      darktable:mask_version="6"
+      darktable:mask_points="8b54453f7737043f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415742"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #23"
+      darktable:mask_version="6"
+      darktable:mask_points="6ed33f3fa4f0fa3e2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415754"
+      darktable:mask_type="192"
+      darktable:mask_name="brush #4"
+      darktable:mask_version="6"
+      darktable:mask_points="gz02eJxzvelm75RhYN/yzdX+2kIDe/Y97vYb9Azsz57xsQVhBoYG+8NfNewZGRgYOhs97bt369t7lXnYv48xtD/R42WvLqWHVe0BGV/7Z/PV7O9d9rGXa1azX5zqa79+jxpWtTfNvMFuiObztvfu1bOPiPe2t3I2wqp2C7+f/YaDhvZqtr72yzmN7J0f+dnvqjTEqtZILcC+coee/bHlAfbpHvr285f42/doYHevE5u3vVySnr13kI/9igBde6tdnvbTivWxqv0b62HvrGhqn6brYT9Nx8R+Sp+H/QdRM6xqz2r62OvLmdiXiAH9dtME7G6RZGOsagUu+dnP3Wdgz6DhZ+/829Beocbf/kcjdjeA/BayScf+cVyA/XKge5vf+tsziehgVfuuFhj2HLr2GxL87J+/1rHXme1jX6Gqi1UtAPnduhg="
+      darktable:mask_nb="12"
+      darktable:mask_src="0000000000000000"/>
+     <rdf:li
+      darktable:mask_num="4"
+      darktable:mask_id="1770415762"
+      darktable:mask_type="129"
+      darktable:mask_name="circle #24"
+      darktable:mask_version="6"
+      darktable:mask_points="a56e433f5533573f2e289a3c0ad7a33c"
+      darktable:mask_nb="1"
+      darktable:mask_src="0000000000000000"/>
+    </rdf:Seq>
+   </darktable:masks_history>
+   <darktable:history>
+    <rdf:Seq>
+     <rdf:li
+      darktable:num="0"
+      darktable:operation="colorin"
+      darktable:enabled="1"
+      darktable:modversion="7"
+      darktable:params="gz48eJxjYhgFowABWAbaAaNgwAEAFEwABw=="
+      darktable:multi_name=""
+      darktable:multi_name_hand_edited="0"
+      darktable:multi_priority="0"
+      darktable:blendop_version="14"
+      darktable:blendop_params="gz11eJxjYIAACQYYOOHEgAZY0QWAgBGLGANDgz0Ej1Q+dcF/IADRAGpyHQU="/>
+     <rdf:li
+      darktable:num="1"
+      darktable:operation="colorout"
+      darktable:enabled="1"
+      darktable:modversion="5"
+      darktable:params="gz35eJxjZBgFo4CBAQAEEAAC"
+      darktable:multi_name=""
+      darktable:multi_name_hand_edited="0"
+      darktable:multi_priority="0"
+      darktable:blendop_version="14"
+      darktable:blendop_params="gz11eJxjYIAACQYYOOHEgAZY0QWAgBGLGANDgz0Ej1Q+dcF/IADRAGpyHQU="/>
+     <rdf:li
+      darktable:num="2"
+      darktable:operation="gamma"
+      darktable:enabled="1"
+      darktable:modversion="1"
+      darktable:params="0000000000000000"
+      darktable:multi_name=""
+      darktable:multi_name_hand_edited="0"
+      darktable:multi_priority="0"
+      darktable:blendop_version="14"
+      darktable:blendop_params="gz11eJxjYIAACQYYOOHEgAZY0QWAgBGLGANDgz0Ej1Q+dcF/IADRAGpyHQU="/>
+     <rdf:li
+      darktable:num="3"
+      darktable:operation="flip"
+      darktable:enabled="1"
+      darktable:modversion="2"
+      darktable:params="ffffffff"
+      darktable:multi_name="_builtin_auto"
+      darktable:multi_name_hand_edited="0"
+      darktable:multi_priority="0"
+      darktable:blendop_version="14"
+      darktable:blendop_params="gz11eJxjYIAACQYYOOHEgAZY0QWAgBGLGANDgz0Ej1Q+dcF/IADRAGpyHQU="/>
+     <rdf:li
+      darktable:num="4"
+      darktable:operation="retouch"
+      darktable:enabled="1"
+      darktable:modversion="3"
+      darktable:params="gz74eJzt2qEOQWEYgOF/2GyaZIriDlyAHYIrkCSF7TRNEwXxNHMjolEFkyRJkyTNHCPhbN4ivc/2/d/27b2EPxlM45DKh6dlbdMKX+TSWYN2C9o9aA+gPYL2BNozaC+gvYL2BtrC8Pe2BNoyaCugrYO28dYu5tV2VtsEbQe0XdD2QNsHbQzaEWjHoJ2AdgbaBLSSJEmSJEmSJEmSJEmSJEmSJP1D/uMSrV47erxZf993xRDuGpVobw=="
+      darktable:multi_name=""
+      darktable:multi_name_hand_edited="0"
+      darktable:multi_priority="0"
+      darktable:blendop_version="14"
+      darktable:blendop_params="gz08eJxjYGBgYAFiCQYYOOEEImemtmXCRFgZMAEjFjEGhgZ7CB6pfOygYtaVAyCMi48L/AcCEA0AkzUpjg=="/>
+    </rdf:Seq>
+   </darktable:history>
+   <dc:subject>
+    <rdf:Bag>
+     <rdf:li>changed</rdf:li>
+     <rdf:li>darktable</rdf:li>
+     <rdf:li>format</rdf:li>
+     <rdf:li>jpg</rdf:li>
+    </rdf:Bag>
+   </dc:subject>
+   <lr:hierarchicalSubject>
+    <rdf:Bag>
+     <rdf:li>darktable|changed</rdf:li>
+     <rdf:li>darktable|format|jpg</rdf:li>
+    </rdf:Bag>
+   </lr:hierarchicalSubject>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>

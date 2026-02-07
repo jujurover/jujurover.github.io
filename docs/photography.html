@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-/* === Base styles (Minima-like) === */
+/* === Base (Minima-like) === */
 body {
   margin: 0;
   font: 400 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -41,13 +41,13 @@ a { color: #2a7ae2; text-decoration: none; }
   font-size: 15px;
 }
 
-.site-nav a[href="photography.html"] {
-  font-size: 20px;
-}
-
 .site-nav a {
   margin-left: 20px;
   color: #424242;
+}
+
+.site-nav a[href="photography.html"] {
+  font-size: 20px;
 }
 
 /* === Justified gallery === */
@@ -61,17 +61,16 @@ a { color: #2a7ae2; text-decoration: none; }
 }
 
 .gallery-row img {
-  height: 220px;
+  border-radius: 4px;
   margin-right: 10px;
   cursor: zoom-in;
-  border-radius: 4px;
+  transition: transform 0.1s;
 }
 
 .gallery-row img:last-child {
   margin-right: 0;
 }
 
-/* instant, subtle hover */
 .gallery-row img:hover {
   transform: scale(1.02);
 }
@@ -84,12 +83,8 @@ a { color: #2a7ae2; text-decoration: none; }
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  background: linear-gradient(
-    rgba(255,255,255,0.35),
-    rgba(255,255,255,0.35)
-  );
+  background: rgba(255,255,255,0.35);
   backdrop-filter: blur(18px) saturate(130%);
-  -webkit-backdrop-filter: blur(18px) saturate(130%);
 }
 
 .lightbox-content {
@@ -106,7 +101,7 @@ a { color: #2a7ae2; text-decoration: none; }
 .lightbox img {
   max-width: 100%;
   max-height: 65vh;
-  cursor: auto;
+  cursor: default;
   user-select: none;
 }
 
@@ -122,13 +117,12 @@ a { color: #2a7ae2; text-decoration: none; }
   max-width: 600px;
 }
 
-/* === Navigation buttons === */
+/* === Navigation === */
 .nav-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   font-size: 36px;
-  color: rgba(0,0,0,0.7);
   background: rgba(255,255,255,0.7);
   border-radius: 50%;
   border: none;
@@ -146,6 +140,7 @@ a { color: #2a7ae2; text-decoration: none; }
   gap: 6px;
   margin-top: 12px;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .thumb-strip img {
@@ -181,21 +176,14 @@ a { color: #2a7ae2; text-decoration: none; }
     <h1 class="site-title"><a href="index.html">Joshua Mu</a></h1>
     <nav class="site-nav">
       <a href="projects.html">Projects</a>
-      <a href="photography.html" aria-label="Photography" title="Photography">📷 🎇</a>
+      <a href="photography.html" title="Photography">📷</a>
     </nav>
   </div>
 </header>
 
 <main class="wrapper">
-  <h1>Some cool pictures I've taken</h1>
-
-  <!-- Unified gallery -->
-  <div class="gallery" id="gallery">
-    <img src="pics/DSC2582.JPG" data-caption="Rose Parade · Pasadena, CA · Canon EOS R · 1/125s f/5.6">
-    <img src="pics/DSC2668.JPG" data-caption="Rose Parade · Pasadena, CA · Canon EOS R · 1/160s f/4">
-    <img src="pics/DSC2723.JPG" data-caption="Malibu Coast · Nikon D850 · 1/200s f/8">
-    <img src="pics/DSC2738.JPG" data-caption="Malibu Sunset · Nikon D850 · 1/60s f/11">
-  </div>
+  <h1>Photography</h1>
+  <div class="gallery" id="gallery"></div>
 </main>
 
 <footer class="site-footer">
@@ -214,22 +202,56 @@ a { color: #2a7ae2; text-decoration: none; }
 </div>
 
 <script>
-/* === Justified layout === */
 const gallery = document.getElementById("gallery");
-const images = Array.from(gallery.querySelectorAll("img"));
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const captionEl = document.getElementById("lightbox-caption");
+const thumbStrip = document.getElementById("thumb-strip");
 
+let photos = [];
+let currentIndex = 0;
+
+/* === Load metadata === */
+fetch("pics/meta/photos.json")
+  .then(r => r.json())
+  .then(data => {
+    photos = data;
+    buildGallery();
+    justify();
+  });
+
+/* === Build gallery and thumbnails === */
+function buildGallery() {
+  gallery.innerHTML = "";
+  thumbStrip.innerHTML = "";
+  photos.forEach((p, i) => {
+    const img = document.createElement("img");
+    img.src = `pics/gallery/${p.filename}`;
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.dataset.index = i;
+    img.onclick = () => open(i);
+    gallery.appendChild(img);
+
+    const t = document.createElement("img");
+    t.src = img.src;
+    t.onclick = () => show(i);
+    thumbStrip.appendChild(t);
+  });
+}
+
+/* === Justified layout === */
 function justify() {
-  const rowHeight = 220;
+  const imgs = Array.from(gallery.querySelectorAll("img"));
   const containerWidth = gallery.clientWidth;
-  let row = [];
-  let rowWidth = 0;
+  const rowHeight = 220;
+  let row = [], rowWidth = 0;
 
   gallery.innerHTML = "";
 
-  images.forEach((img, index) => {
-    const aspect = img.naturalWidth / img.naturalHeight;
+  imgs.forEach(img => {
+    const aspect = img.naturalWidth / img.naturalHeight || 1.5;
     const width = rowHeight * aspect;
-
     row.push({ img, width });
     rowWidth += width;
 
@@ -237,76 +259,67 @@ function justify() {
       const scale = containerWidth / rowWidth;
       const rowDiv = document.createElement("div");
       rowDiv.className = "gallery-row";
-
       row.forEach(item => {
         item.img.style.height = rowHeight * scale + "px";
         rowDiv.appendChild(item.img);
       });
-
       gallery.appendChild(rowDiv);
       row = [];
       rowWidth = 0;
     }
   });
 
-  /* ✅ Render the final (incomplete) row */
-  if (row.length > 0) {
+  if (row.length) {
     const rowDiv = document.createElement("div");
     rowDiv.className = "gallery-row";
-
     row.forEach(item => {
-      item.img.style.height = rowHeight + "px"; // keep natural height
+      item.img.style.height = rowHeight + "px";
       rowDiv.appendChild(item.img);
     });
-
     gallery.appendChild(rowDiv);
   }
 }
 
-
-window.addEventListener("load", justify);
 window.addEventListener("resize", justify);
 
 /* === Lightbox === */
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const captionEl = document.getElementById("lightbox-caption");
-const thumbStrip = document.getElementById("thumb-strip");
-let currentIndex = 0;
-
-images.forEach((img, i) => {
-  img.addEventListener("click", () => {
-    currentIndex = i;
-    open();
-  });
-
-  const t = document.createElement("img");
-  t.src = img.src;
-  t.onclick = () => { currentIndex = i; show(); };
-  thumbStrip.appendChild(t);
-});
-
-function open() {
+function open(i) {
+  currentIndex = i;
   lightbox.style.display = "flex";
-  show();
+  show(i);
+  centerThumbnail(i);
 }
 
-function show() {
-  const img = images[currentIndex];
-  lightboxImg.src = img.src;
-  captionEl.innerHTML = `<i>${img.dataset.caption}</i>`;
+function show(i) {
+  currentIndex = i;
+  const p = photos[i];
+  lightboxImg.src = `pics/full/${p.filename}`;
+  captionEl.innerHTML = `
+    <i>${p.description || ""}</i><br>
+    ${p.camera} · ${p.exposure.focal_length}
+    · f/${p.exposure.aperture}
+    · ${p.exposure.shutter}s · ISO ${p.exposure.iso}
+  `;
   [...thumbStrip.children].forEach(t => t.classList.remove("active"));
-  thumbStrip.children[currentIndex].classList.add("active");
+  thumbStrip.children[i].classList.add("active");
+  centerThumbnail(i);
 }
 
-document.getElementById("prev").onclick = () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  show();
-};
-document.getElementById("next").onclick = () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  show();
-};
+/* === Scroll thumbnail strip so selected is centered === */
+function centerThumbnail(i) {
+  const thumb = thumbStrip.children[i];
+  const stripWidth = thumbStrip.offsetWidth;
+  const thumbCenter = thumb.offsetLeft + thumb.offsetWidth / 2;
+  const scrollLeft = Math.max(0, thumbCenter - stripWidth / 2);
+  thumbStrip.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+}
+
+/* === Navigation === */
+document.getElementById("prev").onclick = () =>
+  show((currentIndex - 1 + photos.length) % photos.length);
+
+document.getElementById("next").onclick = () =>
+  show((currentIndex + 1) % photos.length);
 
 lightbox.onclick = e => {
   if (e.target === lightbox) lightbox.style.display = "none";
