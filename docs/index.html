@@ -5,6 +5,17 @@
   <title>Joshua Mu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
   <style>
   body {
     margin: 0;
@@ -135,6 +146,25 @@
     font-size: 14px;
   }
 
+  /* Contact info CSS */
+  .contact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  }
+
+  .contact-entry {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contact-icon {
+    width: 16px;
+    height: 16px;
+    color: #555;
+  }
+
   /* Footer */
   .site-footer {
     border-top: 1px solid #e8e8e8;
@@ -181,19 +211,103 @@
       </div>
 
       <div>
-        <h1>Joshua Mu</h1>
+        <h1>Joshua $\mu$</h1>
         <p>
-          I’m a student interested in physics, computation, and the interface
-          between theory and experiment. My current interests include quantum
-          information science, numerical simulation, and biological systems
-          under stress.
+          Hi, I'm Josh(ua) and I'm a freshman physics student at Caltech! 
+          I'm interested in the construction of new types of qubits for quantum devices.
         </p>
         <p>
-          This site is a small collection of things I work on — research,
-          projects, and photography.
+          This is where I dump some cool stuff I've been up to.
         </p>
       </div>
     </div>
+
+    <section>
+      <h2>Contact</h2>
+      <p class="section-note">
+        Here's where I exist outside of this website:
+      </p>
+
+      <div class="item">
+        <div class="item-title contact-row">
+          
+          <!-- Email -->
+          <span class="contact-entry">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+                1.1.9 2 2 2h16c1.1 0 2-.9 
+                2-2V6c0-1.1-.9-2-2-2zm0 
+                4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <a href="mailto:jmu@caltech.edu">jmu [at] caltech [dot] edu</a>
+          </span>
+
+          <!-- LinkedIn -->
+          <span class="contact-entry">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path fill="currentColor"
+              d="M19 3A2 2 0 0 1 21 5V19A2 
+              2 0 0 1 19 21H5A2 2 0 0 1 
+              3 19V5A2 2 0 0 1 5 3H19M8 
+              17V10H5V17H8M6.5 8.5A1.5 
+              1.5 0 1 0 6.5 5.5A1.5 
+              1.5 0 0 0 6.5 8.5M19 
+              17V13.5C19 11.57 17.93 
+              10.5 16.5 10.5C15.54 
+              10.5 14.96 11 14.75 
+              11.5V10H12V17H14.75V13.25C14.75 
+              12.42 15.25 11.9 16 11.9C16.75 
+              11.9 17.25 12.42 17.25 13.25V17H19Z"/>
+            </svg>
+            <a href="https://www.linkedin.com/in/joshua-mu-141242217/">LinkedIn</a>
+          </span>
+
+          <!-- GitHub -->
+          <span class="contact-entry">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path fill="currentColor"
+              d="M12 2A10 10 0 0 0 2 
+              12C2 16.42 4.87 20.17 
+              8.84 21.5C9.34 21.58 
+              9.5 21.27 9.5 21V19.5C6.73 
+              20.09 6.14 18.34 6.14 
+              18.34C5.68 17.16 5.03 
+              16.84 5.03 16.84C4.12 
+              16.22 5.1 16.23 5.1 
+              16.23C6.1 16.3 6.63 
+              17.26 6.63 17.26C7.5 
+              18.74 8.97 18.31 9.54 
+              18.06C9.63 17.43 9.89 
+              17 10.18 16.76C7.95 
+              16.5 5.62 15.65 5.62 
+              11.84C5.62 10.73 6 
+              9.82 6.65 9.09C6.55 
+              8.83 6.2 7.73 6.75 
+              6.23C6.75 6.23 7.59 
+              5.97 9.5 7.27C10.29 
+              7.05 11.15 6.94 12 
+              6.94C12.85 6.94 13.71 
+              7.05 14.5 7.27C16.41 
+              5.97 17.25 6.23 17.25 
+              6.23C17.8 7.73 17.45 
+              8.83 17.35 9.09C18 
+              9.82 18.38 10.73 18.38 
+              11.84C18.38 15.66 16.04 
+              16.5 13.81 16.76C14.18 
+              17.07 14.5 17.68 14.5 
+              18.6V21C14.5 21.27 
+              14.66 21.59 15.17 
+              21.5C19.14 20.17 
+              22 16.42 22 12A10 
+              10 0 0 0 12 2Z"/>
+            </svg>
+            <a href="https://github.com/jujurover">GitHub</a>
+          </span>
+
+        </div>
+      </div>
+    </section>
 
     <section>
       <h2>Publications & Preprints</h2>
